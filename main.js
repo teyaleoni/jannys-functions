@@ -35,7 +35,3 @@ function greet(name) {
 }
 
 console.log(greet("Eric"))
-// hi teya
-// hello
-
-//ok
