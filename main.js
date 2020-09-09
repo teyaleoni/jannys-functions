@@ -30,3 +30,10 @@ function hasName(person) {
   // If it is not null, check the length of name. If there is at least one character in name, return
   // true, otherwise return false.
 }
+
+// EXERCISE 1
+function greet(name) {
+  return "Hello " + name + "!"
+}
+
+console.log(greet("Eric"))
