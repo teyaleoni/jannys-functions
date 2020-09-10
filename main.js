@@ -35,3 +35,12 @@ function greet(name) {
 }
 
 console.log(greet("Eric"))
+
+Day 1
+This function is called greet and has one parameter called name.
+It doesn't return a value.
+When greet is called, it will print out "Hello" 
+to the value passed in as the argument to "name". 
+For example, console.log(greet("Eric")); 
+It will say "Hello Eric!"
+
