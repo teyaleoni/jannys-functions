@@ -52,6 +52,8 @@ var callback = function () {
 setTimeout(callback, 5000);
 
 // explaining 2
+// There are two function in this exercise.
+// The first one is anonymous function and the second one is synchromous function.
 // The setTimeout function has callback function as the first parameter.
 // This will execute callback function after 5 seconds by printing out "Done!"
 
