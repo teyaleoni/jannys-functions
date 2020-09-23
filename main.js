@@ -96,7 +96,6 @@ function factorial(x) {
 // if x equals 0 or 1, it will return 1.
 // otherwise, it will return x multiplied by factorial of x minus 1.
 
-// EXERCISE 6
-function toCelsius(fahrenheit) {
-  return (5 / 9) * (fahrenheit - 32)
-}
+// --------------------------------
+
+// I WANT YOU TO LIST OUT 5 FUNCTIONS (ANY FUNCTIONS YOU WANT) AND EXPLAIN THEM TO ME
