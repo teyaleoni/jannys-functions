@@ -15,7 +15,7 @@
 //  * This function "hasName" returns whether the person object has a non-empty name.
 //  * If the name property of person is null or is an empty string, returns false. If not returns true.
 function hasName(person) {
-  return person.name != null && person.name.length > 0;
+  return person.name != null && person.name.length > 0
 }
 
 // ---------------------------------------------------------------- //
@@ -23,7 +23,7 @@ function hasName(person) {
 // STEP 2:
 // Explain line by line what the function does.
 function hasName(person) {
-  return person.name != null && person.name.length > 0;
+  return person.name != null && person.name.length > 0
   // First, make sure that the name property is not null. If it is null, immediately return false.
   // If it is not null, check the length of name. If there is at least one character in name, return
   // true, otherwise return false.
@@ -31,10 +31,10 @@ function hasName(person) {
 
 // EXERCISE 1
 function greet(name) {
-  return "Hello " + name + "!";
+  return "Hello " + name + "!"
 }
 
-console.log(greet("Eric"));
+console.log(greet("Eric"))
 
 // Day 1
 // This function is called greet and has one parameter called name.
@@ -46,10 +46,10 @@ console.log(greet("Eric"));
 
 // EXERCISE 2
 var callback = function () {
-  console.log("Done!");
-};
+  console.log("Done!")
+}
 
-setTimeout(callback, 5000);
+setTimeout(callback, 5000)
 
 // explaining 2
 // There are two function in this exercise.
@@ -59,11 +59,11 @@ setTimeout(callback, 5000);
 
 // EXERCISE 3
 function sumArray(arr) {
-  let count = 0;
+  let count = 0
   for (let i = 0; i < arr.length; i++) {
-    count = count + arr[i];
+    count = count + arr[i]
   }
-  return count;
+  return count
 }
 
 // explaining 3
@@ -76,8 +76,8 @@ function sumArray(arr) {
 
 // EXERCISE 4
 function getLastValue(value) {
-  const lastIndex = value.length - 1;
-  return value[lastIndex];
+  const lastIndex = value.length - 1
+  return value[lastIndex]
 }
 
 // This function is called getLastValue and has one parameter, called value.
@@ -87,11 +87,16 @@ function getLastValue(value) {
 // EXERCISE 5
 function factorial(x) {
   if (x == 0 || x == 1) {
-    return 1;
+    return 1
   }
-  return x * factorial(x - 1);
+  return x * factorial(x - 1)
 }
 
 // This function is called factorial with one parameter, x.
 // if x equals 0 or 1, it will return 1.
 // otherwise, it will return x multiplied by factorial of x minus 1.
+
+// EXERCISE 6
+function toCelsius(fahrenheit) {
+  return (5 / 9) * (fahrenheit - 32)
+}
