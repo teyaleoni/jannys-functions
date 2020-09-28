@@ -15,7 +15,7 @@
 //  * This function "hasName" returns whether the person object has a non-empty name.
 //  * If the name property of person is null or is an empty string, returns false. If not returns true.
 function hasName(person) {
-  return person.name != null && person.name.length > 0
+  return person.name != null && person.name.length > 0;
 }
 
 // ---------------------------------------------------------------- //
@@ -23,7 +23,7 @@ function hasName(person) {
 // STEP 2:
 // Explain line by line what the function does.
 function hasName(person) {
-  return person.name != null && person.name.length > 0
+  return person.name != null && person.name.length > 0;
   // First, make sure that the name property is not null. If it is null, immediately return false.
   // If it is not null, check the length of name. If there is at least one character in name, return
   // true, otherwise return false.
@@ -31,10 +31,10 @@ function hasName(person) {
 
 // EXERCISE 1
 function greet(name) {
-  return "Hello " + name + "!"
+  return "Hello " + name + "!";
 }
 
-console.log(greet("Eric"))
+console.log(greet("Eric"));
 
 // Day 1
 // This function is called greet and has one parameter called name.
@@ -46,10 +46,10 @@ console.log(greet("Eric"))
 
 // EXERCISE 2
 var callback = function () {
-  console.log("Done!")
-}
+  console.log("Done!");
+};
 
-setTimeout(callback, 5000)
+setTimeout(callback, 5000);
 
 // explaining 2
 // There are two function in this exercise.
@@ -59,11 +59,11 @@ setTimeout(callback, 5000)
 
 // EXERCISE 3
 function sumArray(arr) {
-  let count = 0
+  let count = 0;
   for (let i = 0; i < arr.length; i++) {
-    count = count + arr[i]
+    count = count + arr[i];
   }
-  return count
+  return count;
 }
 
 // explaining 3
@@ -76,8 +76,8 @@ function sumArray(arr) {
 
 // EXERCISE 4
 function getLastValue(value) {
-  const lastIndex = value.length - 1
-  return value[lastIndex]
+  const lastIndex = value.length - 1;
+  return value[lastIndex];
 }
 
 // This function is called getLastValue and has one parameter, called value.
@@ -87,9 +87,9 @@ function getLastValue(value) {
 // EXERCISE 5
 function factorial(x) {
   if (x == 0 || x == 1) {
-    return 1
+    return 1;
   }
-  return x * factorial(x - 1)
+  return x * factorial(x - 1);
 }
 
 // This function is called factorial with one parameter, x.
@@ -99,3 +99,64 @@ function factorial(x) {
 // --------------------------------
 
 // I WANT YOU TO LIST OUT 5 FUNCTIONS (ANY FUNCTIONS YOU WANT) AND EXPLAIN THEM TO ME
+
+// 09/28/2020
+function isMatch() {
+  if (card1.dataset.title === card2.dataset.title) {
+    card1.removeEventListener("click", flipCard);
+    card2.removeEventListener("click", flipCard);
+    return;
+  }
+}
+
+//1. This function is called "isMatch" and has no parameter.
+// it will check if the dateset of card1 equals to the dateset of card2.
+// when this statement is true, it will remove a "click" event when flipCard function is called from card1 and card2.Otherwise, do nothing.
+// Then, it returns.
+
+// =======================================================
+function startGame() {
+  shuffle();
+  document
+    .querySelectorAll(".card")
+    .forEach((card) => card.addEventListener("click", flipCard));
+}
+
+// 2. This function is called "startGame" and has no parameter.
+// It will call shuffle function,
+// and it will add a click event on the HTML element with class="card"
+// by use forEach method to iterate for each element in an array.
+// When the event is detected "click", the flipCard function will run.
+// There is no return.
+
+// ========================================================
+function reset() {
+  window.location.reload();
+}
+
+// 3. This function is called "reset" and has no parameter.
+// it will call a reload function in window.
+// There is no return.
+
+function Bird(name, color) {
+  this.name = name;
+  this.color = color;
+}
+
+// 4. This Bird constructor function is for making multiple objects (birds)
+//with the same properties and methods.
+//It has 2 parameters, name and color.
+//(using the keyword "this" to set properties of the object that
+//the Bird function will create)
+//When the constructor is called with the "new" keyword,
+//it assigns the received parameters to the "name" and "color" properties.
+
+function updateTime() {
+  const now = new Date();
+  setTime(now);
+}
+
+//5. This function is called "updateTime" with no parameter.
+//inside the curly brackets, the built-in constructors create a new Date object and
+//store it in a constant variable, "now".
+// When the updateTime function is called, it will excuted another inside function, setTime fucntion with "now" as an argument.
